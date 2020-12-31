@@ -1,5 +1,5 @@
 _G.heads = true
-if game.Players.LocalPlayer.Name == "213samet" or game.Players.LocalPlayer.Name == "RedDevilDare" or game.Players.LocalPlayer.Name == "iTetreX" then
+if game.Players.LocalPlayer.Name == "213samet" then
     while _G.heads do
     wait(0.1)
     local pos = 5, 0, 5
