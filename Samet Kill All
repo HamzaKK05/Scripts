@@ -21,9 +21,9 @@ if game.Players.LocalPlayer.Name == "213samet" then
                 end
             end
         end
-    end
-    for i, v in pairs(workspace.soulPartsFolder:GetChildren()) do
-        game:GetService("Players").LocalPlayer.saberEvent:FireServer("collectSoul", v)
+        for i, v in pairs(workspace.soulPartsFolder:GetChildren()) do
+            game:GetService("Players").LocalPlayer.saberEvent:FireServer("collectSoul", v)
+        end
     end
 end
 end
