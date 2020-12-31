@@ -1,24 +1,29 @@
 _G.heads = true
 if game.Players.LocalPlayer.Name == "213samet" then
-	while _G.heads do
-	wait(0.1)
-        	local pos = 5, 0, 5
-        	local player = game.Players:GetChildren()
-        	for i = 1, #player do
-            	if player[i].Name ~= game.Players.LocalPlayer.Name then
-                	if player[i].Name ~= "iTetreX" then
-                    	if player[i].Name ~= "selxins" then
-							if player[i].Name ~= "Posion1782" then
-                        		local part = player[i].Character.HumanoidRootPart
-                        		part.Transparency = 0
-                        		part.Material = "Neon"
-                        		part.CanCollide = false
-                        		part.Anchored = true
-                        		part.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(pos)
-							end
-                    	end
-                	end
-            	end
-        	end
-	end
+    while _G.heads do
+    wait(0.1)
+    local pos = 5, 0, 5
+    local player = game.Players:GetChildren()
+    for i = 1, #player do
+        if player[i].Name ~= game.Players.LocalPlayer.Name then
+            if player[i].Name ~= "Posion1782" then
+                if player[i].Name ~= "selxins" then
+                    if player[i].Name ~= "RedDevilDare" then
+                        if player[i].Name ~= "iTetreX" then
+                            local part = player[i].Character.HumanoidRootPart
+                            part.Transparency = 0
+                            part.Material = "Neon"
+                            part.CanCollide = false
+                            part.Anchored = true
+                            part.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(pos)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    for i, v in pairs(workspace.soulPartsFolder:GetChildren()) do
+        game:GetService("Players").LocalPlayer.saberEvent:FireServer("collectSoul", v)
+    end
+end
 end
